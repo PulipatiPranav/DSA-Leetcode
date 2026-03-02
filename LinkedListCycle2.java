@@ -28,7 +28,7 @@ public class LinkedListCycle2 {
         ListNode fast = head;
         while (fast != null && fast.next != null) {
             slow = slow.next;
-            fast = fast.next;
+            fast = fast.next.next;
             if (slow == fast) { // cycle detected
                 ListNode entry = head; // pointer pointing to the head
                 while (entry != slow) { // loop to reach the cycle start
