@@ -1,0 +1,24 @@
+class Solution {
+    //In a binary alternating string, either the even indices could be zeros 
+    //or the odd. So we find the number of changes to be made in both the cases
+    //and the return the minimum case.
+    public int minOperations(String s) {
+
+        int pattern1 = 0;
+        int pattern2 = 0;
+        for(int i =0; i < s.length(); i++){
+            char c = s.charAt(i);
+            if(i%2 ==0){
+                if(c == '0') pattern1++;
+                else pattern2++;
+            }
+            else{
+                if(c=='0') pattern2++;
+                else pattern1++;
+            }
+        }
+
+        return Math.min(pattern1,pattern2);
+        
+    }
+}
