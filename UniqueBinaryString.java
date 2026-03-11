@@ -7,7 +7,7 @@
 class UniqueBinaryString {
     public String findDifferentBinaryString(String[] nums) {
 
-        int size = nums.length;
+        // int size = nums.length;
         String s = "";
         for (int i = 0; i < nums.length; i++) {
             String temp = nums[i];
