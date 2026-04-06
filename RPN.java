@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-public class Re {
+public class RPN {
     public int evalRPN(String[] tokens) {
 
         Stack<Integer> st = new Stack<>();
@@ -19,6 +19,6 @@ public class Re {
         return st.pop();
         
     }
-} {
-    
 }
+    
+
